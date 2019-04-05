@@ -1,0 +1,35 @@
+{
+	"name": "pulse-theme",
+	"displayName": "Pulse Theme",
+	"description": "Official Pulse Framework VSCode Extention",
+	"version": "0.0.1",
+	"publisher": "jamiepine",
+	"engines": {
+		"vscode": "^1.32.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "Pulse Theme",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Pulse.json"
+			}
+		]
+	},
+	"scripts": {
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "node ./node_modules/vscode/bin/test",
+		"build": "node ./src/build"
+	},
+	"devDependencies": {
+		"polished": "^1.9.2",
+		"typescript": "^3.3.1",
+		"vscode": "^1.1.28",
+		"eslint": "^5.13.0",
+		"@types/node": "^10.12.21",
+		"@types/mocha": "^2.2.42"
+	}
+}
